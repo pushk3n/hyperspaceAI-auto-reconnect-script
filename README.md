@@ -15,3 +15,9 @@ Import the tampermonkey-backup-chrome file into your tampermonkey extension to e
 
 Or you can create a tampermonkey extension yourself and paste the contents of main.js into your script.
 
+#########################################################
+
+说明:脚本会每隔两秒钟检查一次节点的连接情况,若断开则自动点击连接按钮,当检测次数达到30次以上时将会刷新页面(所以强烈推荐您配合tampermonkey来使用).
+
+Note: The script will check the connection status of the node every two minutes. If it is disconnected, it will automatically click the connect button. When the number of detections reaches 30 or more, the page will be refreshed (so it is strongly recommended that you use it with tampermonkey).
+
